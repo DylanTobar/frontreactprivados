@@ -14,14 +14,26 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #0f1624;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+}
+.footer {
+  background-color: #0f1624;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {
@@ -36,3 +48,176 @@
     transform: rotate(360deg);
   }
 }
+
+.body {
+  background-color: #282c34;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+  
+}
+.titles {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(30px + 2vmin);
+  font-weight: bold;
+   
+}
+.sidenav {
+  width: 150px;
+  background: #0f1624 ;
+  position: absolute;
+  height: 95vh;
+  padding: 0 30px;
+  transition: all 0.5s;
+  text-align: left;
+  left: -100%;
+  z-index: 1000;
+
+}
+
+.sidenav.active h1{
+  left: 0;
+  color: white;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.sidenav.active {
+  left: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 5px 0px;
+  border-radius: 6px;
+}
+
+ul li a:hover,
+ul li a.active{
+  background: #89898958;
+}
+header svg {
+  font-size: 30px;
+}
+.tables{
+  margin-top: 2%;
+  min-width: 80%;
+  z-index: 1;
+}
+
+.Btn {
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  background-color: #54545499;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Btn.new {
+  margin-right: 5px;
+  background-color: #49b636ae;
+  height: 35px;
+}
+button.new:hover {
+  background-color: #4cfc009f; }
+button:hover {
+  background-color: #16a2c2; }
+.Btn.table {
+  margin-right: 5px;
+}
+
+
+.search{
+  display: flex;
+  justify-content:right ;
+  align-items: center;
+}
+
+.search input{
+  padding: 0 5px;
+  height: 30px;
+}
+
+.wrapper {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 420px;
+  background: #8a8a8a56;
+  color: #fff;  
+  border-radius: 5%;
+  padding: 20px 30px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  font-weight: bold;
+  margin-left: 5%;
+  width: 83%;
+  height: 80%;
+  background: #e3e3e3da;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 15px;
+  padding-left: 5%;
+}
+.input-box h1 {
+  padding-left: 7%;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.input-box input::placeholder{
+  color: rgba(91, 91, 91, 0.7);
+  font-weight: bold;
+}
+.wrapper button {
+  margin: 0% 10% 3% 25%;
+  width: 50%;
+  height: 40px;
+  background: #828282;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #0f1624;
+  font-weight: 700;
+}
+.wrapper button:hover {
+  background-color: #16a2c2; 
+ }
