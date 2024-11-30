@@ -27,7 +27,7 @@ function App() {
         <Navbar show={showNav} />
         <div className='body' onClick={() => setShownav(false)}>
           <Routes>
-            <Route path="/Welcome" element={<Welcome />} />
+            <Route path="/" element={<Welcome />} />
             <Route path="/Proyects" element={<Proyects />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/NewProyect" element={<ProyectsForm />} />
