@@ -12,7 +12,7 @@ import Defects from './Components/Defects/Defects-Index'
 import Navbar from './Components/Navbar'
 import { IoMenuSharp } from "react-icons/io5";
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom'
 import DefectsForm from './Components/Defects/Defects-Form';
 
 
@@ -27,7 +27,8 @@ function App() {
         <Navbar show={showNav} />
         <div className='body' onClick={() => setShownav(false)}>
           <Routes>
-            <Route path="/" element={<Welcome />} />
+           <Route path="/" element={<Navigate replace to="/Login" />} />
+            <Route path="/Home" element={<Welcome />} />
             <Route path="/Proyects" element={<Proyects />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/NewProyect" element={<ProyectsForm />} />

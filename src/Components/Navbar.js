@@ -7,7 +7,7 @@ const Navbar = ({ show }) => {
             <h1>Menu</h1>
             <ul>
                 <li>
-                    <Link to='/'>Home</Link>
+                    <Link to='/Home'>Home</Link>
                 </li>
             </ul>
             <ul>
